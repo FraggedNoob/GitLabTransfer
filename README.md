@@ -9,12 +9,12 @@ on the same network.  This also gives the user an option to modify the exported
 JSON data before importing.
 
 ## Status and Limitations
-Seeing little else out on the internet this was a hack.  It did what I wanted 
-it to, but that's about it.  Testing was limited.
+I didn't see anything out there so I built something.  It did just what I wanted 
+it to, but that's about it.  It isn't completely general-purpose (yet).  Testing was limited.
 
 There are limitations with the GitLab API, so this won't give you a 
 perfect project reproduction.  However, it will bring over milestones, issues,
-and issue notes - which was enough for the original needs.  It currently does not
+and issue notes - which was enough for the original needs.  It currently does **not**
 perform user mapping between systems.  (It shouldn't be difficult to add.)
 
 Please look at the GitLabTransfer javadoc for details.
@@ -46,8 +46,8 @@ client can see both machines.)
 3. In GitLabTransfer: set your secret GitLab API tokens for the source server
 4. In GitLabTransfer: set the project name for the source server
 5. Compile your .java as you wish... (.class or put into a .jar) 
-6. Test that you can access the source server via "GitLabTransfer sprojlist" (to see available projects)
-7. Pull down the source data via "GitLabTransfer pullsave" (now you have .json files)
+6. Test that you can access the source server via `GitLabTransfer sprojlist` (Find the project you just created.)
+7. Pull down the source data via `GitLabTransfer pullsave` (now you have .json files)
 
 (If required, move all files to a machine that can see the destination server.)
  
@@ -56,7 +56,7 @@ client can see both machines.)
 3. Create an empty project on your destination GitLab server
 4. In GitLabTransfer: set the project name for the destination server
 5. Compile your .java as you wish... (.class or put into a .jar)
-6. Test that you can access the destination server via "GitLabTransfer dprojlist (to see available projects)
-7. Find your user ID on the destination server via "GitLabTransfer duserlist"
+6. Test that you can access the destination server via `GitLabTransfer dprojlist` (to see available projects)
+7. Find your user ID on the destination server via `GitLabTransfer duserlist`
 8. In GitLabTransfer: set dstUserId and recompile
-9. Push up all the data into the new project on the destination server via "GitLabTransfer readsrc setdestproj putmile putissues putissuenotes"
+9. Push up all the data into the new project on the destination server via `GitLabTransfer readsrc setdestproj putmile putissues putissuenotes`
