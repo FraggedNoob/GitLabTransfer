@@ -40,22 +40,22 @@ The quick way to transfer a project...
 
 (Assume we're starting on a machine that can see the source GitLab server OR that your
 client can see both machines.)
-1) Get the dependencies & build 'em
-2) In GitLabTransfer: set the source server URL
-3) In GitLabTransfer: set your secret GitLab API tokens for the source server
-4) In GitLabTransfer: set the project name for the source server
-5) Compile your .java as you wish... (.class or put into a .jar) 
-6) Test that you can access the source server via "GitLabTransfer sprojlist" (to see available projects)
-7) Pull down the source data via "GitLabTransfer pullsave" (now you have .json files)
+1. Get the dependencies & build 'em
+2. In GitLabTransfer: set the source server URL
+3. In GitLabTransfer: set your secret GitLab API tokens for the source server
+4. In GitLabTransfer: set the project name for the source server
+5. Compile your .java as you wish... (.class or put into a .jar) 
+6. Test that you can access the source server via "GitLabTransfer sprojlist" (to see available projects)
+7. Pull down the source data via "GitLabTransfer pullsave" (now you have .json files)
 
 (If required, move all files to a machine that can see the destination server.)
  
-1) In GitLabTransfer: set the destination server URL
-2) In GitLabTransfer: set your secret GitLab API tokens for the destination server
-3) Create an empty project on your destination GitLab server
-4) In GitLabTransfer: set the project name for the destination server
-5) Compile your .java as you wish... (.class or put into a .jar)
-6) Test that you can access the destination server via "GitLabTransfer dprojlist (to see available projects)
-7) Find your user ID on the destination server via "GitLabTransfer duserlist"
-8) In GitLabTransfer: set dstUserId and recompile
-9) Push up all the data into the new project on the destination server via "GitLabTransfer readsrc setdestproj putmile putissues putissuenotes"
+1. In GitLabTransfer: set the destination server URL
+2. In GitLabTransfer: set your secret GitLab API tokens for the destination server
+3. Create an empty project on your destination GitLab server
+4. In GitLabTransfer: set the project name for the destination server
+5. Compile your .java as you wish... (.class or put into a .jar)
+6. Test that you can access the destination server via "GitLabTransfer dprojlist (to see available projects)
+7. Find your user ID on the destination server via "GitLabTransfer duserlist"
+8. In GitLabTransfer: set dstUserId and recompile
+9. Push up all the data into the new project on the destination server via "GitLabTransfer readsrc setdestproj putmile putissues putissuenotes"
