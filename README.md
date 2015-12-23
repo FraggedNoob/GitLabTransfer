@@ -40,6 +40,7 @@ The quick way to transfer a project...
 
 (Assume we're starting on a machine that can see the source GitLab server OR that your
 client can see both machines.)
+
 1. Get the dependencies & build 'em
 2. In GitLabTransfer: set the source server URL
 3. In GitLabTransfer: set your secret GitLab API tokens for the source server
